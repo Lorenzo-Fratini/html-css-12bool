@@ -1,0 +1,40 @@
+/* debug */
+[class*="col-"] {
+  background: #ffc0cb;
+  height: 200px;
+  line-height: 200px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.col-1::after {
+  content: "1 col";
+}
+
+.col-2::after {
+  content: "2 col";
+}
+
+.col-8::after {
+  content: "8 col";
+}
+
+.col-12::after {
+  content: "12 col";
+}
+
+.padding {
+  padding: 4px;
+}
+
+.nested [class*="col-"] {
+  height: 192px;
+  line-height: 192px;
+  background: #f07f80;
+  border: 1px solid #fff;
+}
+
+.nested [class*="col-"]:before {
+  content: "Nested ";
+}
+/* /debug */
